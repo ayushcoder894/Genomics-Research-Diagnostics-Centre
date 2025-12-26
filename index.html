@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genomics Research & Diagnostics Centre | DNA Testing & Genetic Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="dna-loader">
+            <div class="dna-strand"></div>
+            <div class="dna-strand"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-dna"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Genomics Research</span>
+                    <span class="logo-sub">& Diagnostics Centre</span>
+                </div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#tests">Our Tests</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#why-us">Why Choose Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#booking" class="btn btn-primary nav-btn">Book Appointment</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="floating-dna dna-1"></div>
+            <div class="floating-dna dna-2"></div>
+            <div class="floating-dna dna-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-certificate"></i> Trusted DNA Testing Lab
+                </div>
+                <h1>Unlock Your <span class="gradient-text">Genetic Story</span></h1>
+                <p>Advanced DNA testing services with accurate results. From paternity tests to ancestry analysis, we provide comprehensive genetic solutions with complete confidentiality.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="10000">0</span>+
+                        <span class="stat-label">Tests Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="99">0</span>%
+                        <span class="stat-label">Accuracy Rate</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="15">0</span>+
+                        <span class="stat-label">Test Types</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn btn-primary btn-lg">
+                        <i class="fas fa-calendar-check"></i> Book Appointment
+                    </a>
+                    <a href="#tests" class="btn btn-outline btn-lg">
+                        <i class="fas fa-flask"></i> Explore Tests
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-card">
+                    <div class="card-glow"></div>
+                    <div class="dna-animation">
+                        <svg viewBox="0 0 200 300" class="dna-svg">
+                            <defs>
+                                <linearGradient id="dnaGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#667eea"/>
+                                    <stop offset="100%" style="stop-color:#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="chromosome-icon">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3>Your DNA</h3>
+                    <p>Holds the answers</p>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- Quick Services Bar -->
+    <section class="quick-services">
+        <div class="container">
+            <div class="quick-service-grid">
+                <div class="quick-item">
+                    <i class="fas fa-home"></i>
+                    <span>Home Sample Collection</span>
+                </div>
+                <div class="quick-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Fast Results</span>
+                </div>
+                <div class="quick-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>100% Confidential</span>
+                </div>
+                <div class="quick-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Court Admissible</span>
+                </div>
+                <div class="quick-item">
+                    <i class="fas fa-headset"></i>
+                    <span>24/7 Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Services</span>
+                <h2>Comprehensive <span class="gradient-text">Diagnostic Solutions</span></h2>
+                <p>We offer a wide range of genetic testing and diagnostic services to meet your healthcare needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-category="genetic">
+                    <div class="service-icon">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3>Genetic Testing</h3>
+                    <p>Comprehensive DNA analysis including paternity, maternity, and siblingship tests with 99.99% accuracy.</p>
+                    <a href="#tests" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-category="prenatal">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Prenatal Testing</h3>
+                    <p>Non-invasive prenatal paternity testing and NIPT for expectant mothers with safe procedures.</p>
+                    <a href="#tests" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-category="legal">
+                    <div class="service-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Legal DNA Testing</h3>
+                    <p>Court-admissible DNA tests for immigration, visa purposes, and legal proceedings.</p>
+                    <a href="#tests" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-category="radiology">
+                    <div class="service-icon">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <h3>Radiology Services</h3>
+                    <p>Advanced imaging including CT Scan, MRI, Ultrasound, X-ray, and PET Scan facilities.</p>
+                    <a href="#tests" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-category="pathology">
+                    <div class="service-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Pathology Lab</h3>
+                    <p>Complete pathology services with state-of-the-art equipment and experienced professionals.</p>
+                    <a href="#tests" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-category="research">
+                    <div class="service-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Research Services</h3>
+                    <p>Cell line authentication and specialized research testing for academic and pharmaceutical needs.</p>
+                    <a href="#tests" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tests Section -->
+    <section class="tests-section" id="tests">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Tests</span>
+                <h2>Complete Range of <span class="gradient-text">DNA & Diagnostic Tests</span></h2>
+                <p>Choose from our comprehensive list of tests and book your appointment today</p>
+            </div>
+
+            <!-- Test Search -->
+            <div class="test-search">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="testSearch" placeholder="Search for a test...">
+                </div>
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All Tests</button>
+                    <button class="filter-btn" data-filter="dna">DNA Tests</button>
+                    <button class="filter-btn" data-filter="radiology">Radiology</button>
+                    <button class="filter-btn" data-filter="pathology">Pathology</button>
+                </div>
+            </div>
+
+            <!-- Tests Grid -->
+            <div class="tests-grid">
+                <!-- DNA Tests -->
+                <div class="test-card" data-category="dna" data-name="Paternity DNA Test">
+                    <div class="test-badge">Most Popular</div>
+                    <div class="test-icon"><i class="fas fa-male"></i><i class="fas fa-child"></i></div>
+                    <h3>Paternity DNA Test</h3>
+                    <p>Determine biological father-child relationship with 99.99% accuracy</p>
+                    <ul class="test-features">
+                        <li><i class="fas fa-check"></i> Results in 3-5 days</li>
+                        <li><i class="fas fa-check"></i> Court admissible option</li>
+                        <li><i class="fas fa-check"></i> Home collection available</li>
+                    </ul>
+                    <button class="btn btn-primary btn-book" data-test="Paternity DNA Test">Book Now</button>
+                </div>
+
+                <div class="test-card" data-category="dna" data-name="Maternity DNA Test">
+                    <div class="test-icon"><i class="fas fa-female"></i><i class="fas fa-child"></i></div>
+                    <h3>Maternity DNA Test</h3>
+                    <p>Confirm biological mother-child relationship with precision</p>
+                    <ul class="test-features">
+                        <li><i class="fas fa-check"></i> High accuracy results</li>
+                        <li><i class="fas fa-check"></i> Confidential testing</li>
+                        <li><i class="fas fa-check"></i> Legal documentation</li>
+                    </ul>
+                    <button class="btn btn-primary btn-book" data-test="Maternity DNA Test">Book Now</button>
+                </div>
+
+                <div class="test-card" data-category="dna" data-name="Siblingship DNA Test">
+                    <div class="test-icon"><i class="fas fa-users"></i></div>
+                    <h3>Siblingship DNA Test</h3>
+                    <p>Determine if individuals are biological siblings</p>
+                    <ul class="test-features">
+                        <li><i class="fas fa-check"></i> Full & half sibling testing</li>
+                        <li><i class="fas fa-check"></i> Statistical analysis</li>
+                        <li><i class="fas fa-check"></i> Comprehensive report</li>
+                    </ul>
+                    <button class="btn btn-primary btn-book" data-test="Siblingship DNA Test">Book Now</button>
+                </div>
+
+                <div class="test-card" data-category="dna" data-name="Immigration DNA Test">
+                    <div class="test-badge">Legal</div>
+                    <div class="test-icon"><i class="fas fa-passport"></i></div>
+                    <h3>Immigration DNA Test</h3>
+                    <p>DNA testing for visa and immigration purposes</p>
+                    <ul class="test-features">
+                        <li><i class="fas fa-check"></i> Embassy accepted</li>
+                        <li><i class="fas fa-check"></i> Chain of custody</li>
+                        <li><i class="fas fa-check"></i> International standards</li>
+                    </ul>
+                    <button class="btn btn-primary btn-book" data-test="Immigration DNA Test for Visa">Book Now</button>
+                </div>
+
+                <div class="test-card" data-category="dna" data-name="Ancestry DNA Test">
+                    <div class="test-icon"><i class="fas fa-globe-asia"></i></div>
+                    <h3>Ancestry DNA Test</h3>
+                    <p>Discover your ethnic origins and family heritage</p>
+                    <ul class="test-features">
+                        <li><i class="fas fa-check"></i> Ethnic breakdown</li>
+                        <li><i class="fas fa-check"></i> Migration patterns</li>
+                        <li><i class="fas fa-check"></i> Detailed heritage report</li>
+                    </ul>
+                    <button class="btn btn-primary btn-book" data-test="Ancestry DNA Test">Book Now</button>
+                </div>
+
+                <div class="test-card" data-category="dna" data-name="Organ Transplant DNA Test">
+                    <div class="test-badge">Medical</div>
+                    <div class="test-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h3>Organ Transplant DNA Test</h3>
+                    <p>HLA typing for kidney and organ transplant compatibility</p>
+                    <ul class="test-features">
+                        <li><i class="fas fa-check"></i> HLA typing</li>
+                        <li><i class="fas fa-check"></i> Compatibility testing</li>
+                        <li><i class="fas fa-check"></i> Medical grade results</li>
+                    </ul>
+                    <button class="btn btn-primary btn-book" data-test="DNA Test for Kidney/Organ Transplant">Book Now</button>
+                </div>
+
+                <div class="test-card" data-category="dna" data-name="Non-Invasive Prenatal Paternity">
+                    <div class="test-badge">Prenatal</div>
+                    <div class="test-icon"><i class="fas fa-baby"></i></div>
+                    <h3>Non-Invasive Prenatal Paternity</h3>
+                    <p>Safe prenatal paternity testing from 7 weeks of pregnancy</p>
+                    <ul class="test-features">
+                        <li><i class="fas fa-check"></i> 100% safe for baby</li>
+                        <li><i class="fas fa-check"></i> Blood sample only</li>
+                        <li><i class="fas fa-check"></i> Accurate results</li>
+                    </ul>
+                    <button class="btn btn-primary btn-book" data-test="Non-Invasive Prenatal Paternity Test">Book Now</button>
+                </div>
+
+                <div class="test-card" data-category="dna" data-name="NIPT Genetic DNA Test">
+                    <div class="test-badge">Prenatal</div>
+                    <div class="test-icon"><i class="fas fa-dna"></i></div>
+                    <h3>NIPT / Genetic DNA Tests</h3>
+                    <p>Non-invasive prenatal testing for genetic conditions</p>
+                    <ul class="test-features">
+                        <li><i class="fas fa-check"></i> Chromosomal screening</li>
+                        <li><i class="fas fa-check"></i> Gender determination</li>
+                        <li><i class="fas fa-check"></i> Risk assessment</li>
+                    </ul>
+                    <button class="btn btn-primary btn-book" data-test="NIPT/Genetic DNA Test">Book Now</button>
+                </div>
+
+                <div class="test-card" data-category="dna" data-name="Forensics DNA Test">
+                    <div class="test-badge">Legal</div>
+                    <div class="test-icon"><i class="fas fa-fingerprint"></i></div>
+                    <h3>Forensics DNA Test</h3>
+                    <p>DNA profiling for forensic and legal investigations</p>
+                    <ul class="test-features">
+                        <li><i class="fas fa-check"></i> Crime scene samples</li>
+                        <li><i class="fas fa-check"></i> Court admissible</li>
+                        <li><i class="fas fa-check"></i> Expert testimony</li>
+                    </ul>
+                    <button class="btn btn-primary btn-book" data-test="Forensics DNA Test">Book Now</button>
+                </div>
+
+                <div class="test-card" data-category="dna" data-name="Drug & Alcohol Test">
+                    <div class="test-icon"><i class="fas fa-pills"></i></div>
+                    <h3>Drug & Alcohol Test</h3>
+                    <p>Comprehensive substance detection and analysis</p>
+                    <ul class="test-features">
+                        <li><i class="fas fa-check"></i> Multi-panel screening</li>
+                        <li><i class="fas fa-check"></i> Workplace testing</li>
+                        <li><i class="fas fa-check"></i> Quick turnaround</li>
+                    </ul>
+                    <button class="btn btn-primary btn-book" data-test="Drug & Alcohol Test">Book Now</button>
+                </div>
+
+                <div class="test-card" data-category="dna" data-name="Cell Line Authentication">
+                    <div class="test-badge">Research</div>
+                    <div class="test-icon"><i class="fas fa-microscope"></i></div>
+                    <h3>Cell Line Authentication</h3>
+                    <p>Human & Mouse cell line verification for research</p>
+                    <ul class="test-features">
+                        <li><i class="fas fa-check"></i> STR profiling</li>
+                        <li><i class="fas fa-check"></i> Species confirmation</li>
+                        <li><i class="fas fa-check"></i> Contamination check</li>
+                    </ul>
+                    <button class="btn btn-primary btn-book" data-test="Cell Line Authentication Test">Book Now</button>
+                </div>
+
+                <!-- Radiology Tests -->
+                <div class="test-card" data-category="radiology" data-name="CT Scan">
+                    <div class="test-icon"><i class="fas fa-x-ray"></i></div>
+                    <h3>CT Scan</h3>
+                    <p>Advanced computed tomography imaging</p>
+                    <ul class="test-features">
+                        <li><i class="fas fa-check"></i> High-resolution images</li>
+                        <li><i class="fas fa-check"></i> Full body scanning</li>
+                        <li><i class="fas fa-check"></i> Quick procedure</li>
+                    </ul>
+                    <button class="btn btn-primary btn-book" data-test="CT Scan">Book Now</button>
+                </div>
+
+                <div class="test-card" data-category="radiology" data-name="MRI">
+                    <div class="test-icon"><i class="fas fa-magnet"></i></div>
+                    <h3>MRI Scan</h3>
+                    <p>Magnetic resonance imaging for detailed analysis</p>
+                    <ul class="test-features">
+                        <li><i class="fas fa-check"></i> No radiation</li>
+                        <li><i class="fas fa-check"></i> Soft tissue imaging</li>
+                        <li><i class="fas fa-check"></i> 3D visualization</li>
+                    </ul>
+                    <button class="btn btn-primary btn-book" data-test="MRI Scan">Book Now</button>
+                </div>
+
+                <div class="test-card" data-category="radiology" data-name="Ultrasound">
+                    <div class="test-icon"><i class="fas fa-wave-square"></i></div>
+                    <h3>Ultrasound</h3>
+                    <p>Safe imaging using sound waves</p>
+                    <ul class="test-features">
+                        <li><i class="fas fa-check"></i> Pregnancy scans</li>
+                        <li><i class="fas fa-check"></i> Abdominal imaging</li>
+                        <li><i class="fas fa-check"></i> Real-time imaging</li>
+                    </ul>
+                    <button class="btn btn-primary btn-book" data-test="Ultrasound">Book Now</button>
+                </div>
+
+                <div class="test-card" data-category="radiology" data-name="X-Ray">
+                    <div class="test-icon"><i class="fas fa-bone"></i></div>
+                    <h3>X-Ray</h3>
+                    <p>Quick diagnostic imaging for bones and chest</p>
+                    <ul class="test-features">
+                        <li><i class="fas fa-check"></i> Digital X-ray</li>
+                        <li><i class="fas fa-check"></i> Instant results</li>
+                        <li><i class="fas fa-check"></i> Low radiation</li>
+                    </ul>
+                    <button class="btn btn-primary btn-book" data-test="X-Ray">Book Now</button>
+                </div>
+
+                <div class="test-card" data-category="radiology" data-name="PET Scan">
+                    <div class="test-badge">Advanced</div>
+                    <div class="test-icon"><i class="fas fa-atom"></i></div>
+                    <h3>PET Scan</h3>
+                    <p>Positron emission tomography for cancer detection</p>
+                    <ul class="test-features">
+                        <li><i class="fas fa-check"></i> Cancer staging</li>
+                        <li><i class="fas fa-check"></i> Metabolic imaging</li>
+                        <li><i class="fas fa-check"></i> Treatment monitoring</li>
+                    </ul>
+                    <button class="btn btn-primary btn-book" data-test="PET Scan">Book Now</button>
+                </div>
+
+                <!-- Pathology -->
+                <div class="test-card" data-category="pathology" data-name="Pathology Services">
+                    <div class="test-icon"><i class="fas fa-vials"></i></div>
+                    <h3>Path Lab Services</h3>
+                    <p>Complete pathology and clinical laboratory services</p>
+                    <ul class="test-features">
+                        <li><i class="fas fa-check"></i> Blood tests</li>
+                        <li><i class="fas fa-check"></i> Urine analysis</li>
+                        <li><i class="fas fa-check"></i> Biopsy examination</li>
+                    </ul>
+                    <button class="btn btn-primary btn-book" data-test="Pathology Lab Services">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Why Choose Us</span>
+                <h2>Your Trusted Partner in <span class="gradient-text">Genetic Testing</span></h2>
+            </div>
+            <div class="why-us-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>99.99% Accuracy</h3>
+                    <p>Our tests are performed with the highest accuracy standards using advanced technology</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>100% Confidential</h3>
+                    <p>Complete privacy guaranteed. Your genetic information is safe with us</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Home Collection</h3>
+                    <p>Free sample collection from your doorstep for your convenience</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Fast Results</h3>
+                    <p>Get your results quickly without compromising on quality</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Court Admissible</h3>
+                    <p>Legal DNA tests accepted by courts and immigration authorities</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Competitive rates without compromising on quality or accuracy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-image-wrapper">
+                        <div class="image-decoration"></div>
+                        <div class="about-placeholder">
+                            <i class="fas fa-dna"></i>
+                            <span>GRDC</span>
+                        </div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="years">10+</span>
+                        <span class="text">Years of Excellence</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-badge">About Us</span>
+                    <h2>Leading <span class="gradient-text">Genomics Research</span> & Diagnostics Centre</h2>
+                    <p>Genomics Research & Diagnostics Centre is a premier diagnostic facility located in Karnal, Haryana. We specialize in advanced genetic testing and comprehensive diagnostic services.</p>
+                    <p>Our state-of-the-art laboratory is equipped with the latest technology to provide accurate and reliable results. We are committed to making genetic testing accessible and affordable for everyone.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Experienced Team of Geneticists</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Advanced Laboratory Equipment</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Quick Turnaround Time</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Affordable Testing Options</span>
+                        </div>
+                    </div>
+                    <a href="#booking" class="btn btn-primary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">How It Works</span>
+                <h2>Simple <span class="gradient-text">4-Step Process</span></h2>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Book Appointment</h3>
+                        <p>Schedule your test online or call us</p>
+                    </div>
+                </div>
+                <div class="process-line"></div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Sample Collection</h3>
+                        <p>Visit our center or home collection</p>
+                    </div>
+                </div>
+                <div class="process-line"></div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Lab Analysis</h3>
+                        <p>Advanced testing in our certified lab</p>
+                    </div>
+                </div>
+                <div class="process-line"></div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Get Results</h3>
+                        <p>Receive your detailed report</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info">
+                    <span class="section-badge">Book Appointment</span>
+                    <h2>Schedule Your <span class="gradient-text">Test Today</span></h2>
+                    <p>Fill out the form and our team will contact you within 24 hours to confirm your appointment.</p>
+                    
+                    <div class="contact-info-list">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <span>Call Us</span>
+                                <a href="tel:+918572851031">+91 8572851031</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <span>Email Us</span>
+                                <a href="mailto:Info.genomicscentre@gmail.com">Info.genomicscentre@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <span>Visit Us</span>
+                                <p>97, Street No 8, Vasant Vihar,<br>Karnal, Haryana 132001</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="info-content">
+                                <span>WhatsApp</span>
+                                <a href="https://wa.me/918572851031" target="_blank">Chat with us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-form-container">
+                    <form id="bookingForm" class="booking-form">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone"><i class="fas fa-phone"></i> Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="test"><i class="fas fa-flask"></i> Select Test *</label>
+                            <select id="test" name="test" required>
+                                <option value="">Choose a test...</option>
+                                <optgroup label="DNA Tests">
+                                    <option value="Paternity DNA Test">Paternity DNA Test</option>
+                                    <option value="Maternity DNA Test">Maternity DNA Test</option>
+                                    <option value="Siblingship DNA Test">Siblingship DNA Test</option>
+                                    <option value="Immigration DNA Test for Visa">Immigration DNA Test for Visa</option>
+                                    <option value="Ancestry DNA Test">Ancestry DNA Test</option>
+                                    <option value="DNA Test for Kidney/Organ Transplant">DNA Test for Kidney/Organ Transplant</option>
+                                    <option value="Non-Invasive Prenatal Paternity Test">Non-Invasive Prenatal Paternity Test</option>
+                                    <option value="NIPT/Genetic DNA Test">NIPT/Genetic DNA Test</option>
+                                    <option value="Forensics DNA Test">Forensics DNA Test</option>
+                                    <option value="Drug & Alcohol Test">Drug & Alcohol Test</option>
+                                    <option value="Cell Line Authentication Test">Cell Line Authentication Test (Human & Mouse)</option>
+                                </optgroup>
+                                <optgroup label="Radiology">
+                                    <option value="CT Scan">CT Scan</option>
+                                    <option value="MRI Scan">MRI Scan</option>
+                                    <option value="Ultrasound">Ultrasound</option>
+                                    <option value="X-Ray">X-Ray</option>
+                                    <option value="PET Scan">PET Scan</option>
+                                </optgroup>
+                                <optgroup label="Pathology">
+                                    <option value="Pathology Lab Services">Pathology Lab Services</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date"><i class="fas fa-calendar"></i> Preferred Date</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment"></i> Additional Message</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Any specific requirements or questions..."></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="homeCollection" name="homeCollection">
+                            <label for="homeCollection">I need home sample collection</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            <i class="fas fa-paper-plane"></i> Book Appointment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">FAQs</span>
+                <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How accurate is DNA paternity testing?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our DNA paternity tests are 99.99% accurate when the alleged father is the biological father, and 100% accurate when he is not.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How long does it take to get results?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most DNA test results are available within 3-5 business days. Expedited options are available for urgent cases.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer home sample collection?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer free home sample collection within Karnal and surrounding areas. Additional charges may apply for distant locations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are your DNA tests court admissible?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer legal DNA testing that is court admissible. These tests follow strict chain of custody procedures.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is my information kept confidential?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely. All tests and results are 100% confidential. We follow strict privacy protocols to protect your information.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What samples are needed for DNA testing?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We typically use buccal (cheek) swabs which are painless and non-invasive. Other samples like blood or hair can also be used.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.789!2d76.98!3d29.69!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDQxJzI0LjAiTiA3NsKwNTgnNDguMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <div class="contact-details">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-card">
+                        <div class="contact-person">
+                            <div class="person-avatar">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="person-info">
+                                <h4>Akash Rana</h4>
+                                <span>Business Development Executive</span>
+                            </div>
+                        </div>
+                        <div class="contact-links">
+                            <a href="tel:+918572851031" class="contact-link">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+91 8572851031</span>
+                            </a>
+                            <a href="mailto:Info.genomicscentre@gmail.com" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>Info.genomicscentre@gmail.com</span>
+                            </a>
+                            <a href="https://wa.me/918572851031" class="contact-link whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp Us</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="address-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Our Address</h4>
+                            <p>97, Street No 8, Vasant Vihar,<br>Karnal, Haryana 132001</p>
+                        </div>
+                    </div>
+                    <div class="hours-card">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Monday - Saturday: 9:00 AM - 7:00 PM<br>Sunday: 10:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <i class="fas fa-dna"></i>
+                        <span>Genomics Research & Diagnostics Centre</span>
+                    </div>
+                    <p>Your trusted partner for advanced DNA testing and diagnostic services. Accurate results, complete confidentiality.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#tests">Our Tests</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Popular Tests</h4>
+                    <ul>
+                        <li><a href="#tests">Paternity DNA Test</a></li>
+                        <li><a href="#tests">Immigration DNA Test</a></li>
+                        <li><a href="#tests">Ancestry DNA Test</a></li>
+                        <li><a href="#tests">NIPT Test</a></li>
+                        <li><a href="#tests">Forensics DNA Test</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 97, Street No 8, Vasant Vihar, Karnal, Haryana 132001</p>
+                    <p><i class="fas fa-phone-alt"></i> +91 8572851031</p>
+                    <p><i class="fas fa-envelope"></i> Info.genomicscentre@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Genomics Research & Diagnostics Centre. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/918572851031?text=Hi,%20I%20want%20to%20book%20a%20test" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span class="tooltip">Chat with us!</span>
+    </a>
+
+    <!-- Back to Top -->
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon success">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Appointment Booked!</h3>
+            <p>Thank you for choosing Genomics Research & Diagnostics Centre. We will contact you shortly to confirm your appointment.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
